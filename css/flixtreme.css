@@ -2,11 +2,6 @@
 body {
     padding-top: 70px; /* Offset for fixed navigation. */
 }
-
-.container {
-    width: 900px;
-}
-
 .navbar.navbar-inverse {
     background: #167efb;
     border-color: #167efb;
@@ -51,6 +46,9 @@ body {
 }
 
 @media (min-width: 768px) {
+    .container {
+        width: 900px;
+    }
 
     .flixtreme h2 {
         margin-top: 5px;
@@ -74,4 +72,10 @@ body {
         font-size: 1em;
     }
 
+}
+
+@media (max-width: 767px) {
+    .nav-pills {
+        margin: 0 15px;
+    }
 }
