@@ -1,0 +1,77 @@
+/* Overrides */
+body {
+    padding-top: 70px; /* Offset for fixed navigation. */
+}
+
+.container {
+    width: 900px;
+}
+
+.navbar.navbar-inverse {
+    background: #167efb;
+    border-color: #167efb;
+}
+.nav-pills > li {
+    font-size: 1.2em;
+}
+.nav-pills > li > a {
+    background-color: #167efb;
+    color: #fff;
+}
+.nav-pills > li > a:hover,
+.nav-pills > li.active > a:hover {
+    background-color: #146ad2;
+}
+.nav-pills > li.active > a {
+    background-color: #167efb;
+    color: #fff;
+}
+.nav-pills > li.active > a:after {
+    background-color: #fff;
+    border-radius: 5px;
+    content: '';
+    height: 10px;
+    position: absolute;
+    right: 15px;
+    top: 16px;
+    width: 10px;
+}
+.nav-stacked > li+li {
+    margin-top: 4px;
+}
+
+/* Custom */
+.no-list-style {
+    list-style-type: none;
+}
+
+.flixtreme p,
+.flixtreme ul {
+    color: #666;
+}
+
+@media (min-width: 768px) {
+
+    .flixtreme h2 {
+        margin-top: 5px;
+    }
+    .flixtreme p {
+        font-size: 1.4em;
+        line-height: 1.8em;
+    }
+
+    .navigation-wrap {
+        position: fixed;
+        top: 70px;
+        width: 200px;
+        z-index: 10; /* Puts the navigation over the content. */
+    }
+    .content-wrap {
+        padding-left: 240px;
+    }
+
+    .terms p {
+        font-size: 1em;
+    }
+
+}
