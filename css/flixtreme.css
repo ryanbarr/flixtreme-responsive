@@ -1,0 +1,261 @@
+/* Overrides */
+body {
+    padding-top: 70px; /* Offset for fixed navigation. */
+}
+.navbar.navbar-inverse {
+    background: #167efb;
+    border-color: #167efb;
+}
+.nav-pills > li {
+    font-size: 1.2em;
+}
+.nav-pills > li > a {
+    background-color: #167efb;
+    color: #fff;
+}
+.nav-pills > li > a:hover,
+.nav-pills > li.active > a:hover {
+    background-color: #146ad2;
+}
+.nav-pills > li.active > a {
+    background-color: #167efb;
+    color: #fff;
+}
+.nav-pills > li.active > a:after {
+    background-color: #fff;
+    border-radius: 5px;
+    content: '';
+    height: 10px;
+    position: absolute;
+    right: 15px;
+    top: 16px;
+    width: 10px;
+}
+.nav-stacked > li+li {
+    margin-top: 4px;
+}
+
+/* Custom */
+.no-list-style {
+    list-style-type: none;
+}
+
+.flixtreme p,
+.flixtreme ul {
+    color: #666;
+}
+
+.video-wrap {
+    line-height: 0;
+    max-width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+}
+
+.video-wrap > video {
+    max-width: 100%;
+}
+
+.jumbo-wrap {
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    width: 80%;
+    max-width: 1400px;
+    z-index: 10;
+}
+
+.jumbo-wrap > .phones {
+    float: left;
+    text-align: center;
+    width: 50%;
+}
+
+.jumbo-wrap > .details {
+    clear: right;
+    float: left;
+    padding: 10% 0 0 20px;
+    width: 50%;
+}
+.download-app {
+    background: transparent;
+    border: 5px solid #fff;
+    border-radius: 18px;
+    box-shadow: 1px 1px rgba(0, 0, 0, .25);
+    color: #fff;
+    font-size: 1.8vw;
+    margin-top: 12%;
+    padding: .4em 2em;
+    text-shadow: 1px 1px rgba(0, 0, 0, .25);
+    max-width: 100%;
+}
+.download-app:hover,
+.download-app:active {
+    background: rgba(22, 126, 251, .5);
+    color: #fff;
+}
+
+.jumbo-wrap > .phones img,
+.jumbo-wrap > .details img {
+    max-width: 100%;
+}
+
+.social {
+    margin-top: 11vw;
+}
+.social a {
+    background-image: url('/images/social.png');
+    display: inline-block;
+    height: 56px;
+    margin-right: 15px;
+    width: 48px;
+}
+.social a span {
+    display: none;
+}
+.social .facebook {
+    background-position: 0 0;
+}
+.social .facebook:hover {
+    background-position: 0 -56px;
+}
+.social .twitter {
+    background-position: -64px 0;
+}
+.social .twitter:hover {
+    background-position: -64px -56px;
+}
+.social .instagram {
+    background-position: -129px 0;
+}
+.social .instagram:hover {
+    background-position: -129px -56px;
+}
+
+.hashtag {
+    color: rgb(1, 123, 255);
+    font-size: 4.5vw;
+}
+
+.flixtreme-intro .intro-nav {
+    background: #fff;
+    clear: both;
+    font-size: 1.6vw;
+    font-weight: bold;
+    margin: 0;
+    padding: 2vw 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.flixtreme-intro .intro-nav a,
+.flixtreme-intro .intro-nav a:visited {
+    color: #b0b0b0;
+    display: inline-block;
+    margin: 0 1.2vw;
+}
+
+.flixtreme-intro .intro-nav a:hover,
+.flixtreme-intro .intro-nav a:active {
+    color: #888;
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 900px;
+    }
+
+    .flixtreme h2 {
+        margin-top: 5px;
+    }
+    .flixtreme p {
+        font-size: 1.4em;
+        line-height: 1.8em;
+    }
+
+    .navigation-wrap {
+        position: fixed;
+        top: 70px;
+        width: 200px;
+        z-index: 10; /* Puts the navigation over the content. */
+    }
+    .content-wrap {
+        padding-left: 240px;
+    }
+
+    .terms p {
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 900px) {
+    .social { margin-top: 13vw; }
+    .hashtag { font-size: 3.5vw; }
+}
+
+@media (min-width: 1200px) { .social { margin-top: 14vw; } }
+
+@media (min-width: 1400px) { .hashtag { font-size: 3vw; } }
+
+@media (min-width: 1700px) {
+    .social { margin-top: 15vw; }
+    .hashtag { font-size: 2.5vw; }
+}
+
+@media (min-width: 1900px) { .social { margin-top: 16vw; } }
+
+@media (max-width: 767px) {
+    .nav-pills {
+        margin: 0 15px;
+    }
+
+    .jumbo-wrap {
+        background: #167efb;
+        top: 0;
+        width: 100%;
+    }
+
+    .jumbo-wrap > .details {
+        padding: 50px 0 0 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .jumbo-wrap > .details .title {
+        width: 80%;
+    }
+
+    .jumbo-wrap > .details .download-app {
+        margin-top: 50px;
+        padding: 10px 0;
+        width: 80%;
+    }
+
+    .jumbo-wrap > .details .social {
+        background-color: #fff;
+        line-height: 2.5em;
+        margin-top: 50px;
+        padding-top: 25px;
+    }
+
+    .jumbo-wrap > .details .hashtag {
+        font-size: 2.5em;
+        line-height: 1em;
+    }
+
+    .download-app {
+        border: 3px solid #fff;
+        font-size: 32px;
+        margin: 0;
+    }
+
+    .flixtreme-intro .intro-nav {
+        font-size: 14px;
+        font-weight: bold;
+        padding: 20px 0;
+    }
+}
