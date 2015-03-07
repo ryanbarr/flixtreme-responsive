@@ -2,26 +2,26 @@
 body {
     padding-top: 70px; /* Offset for fixed navigation. */
 }
-.flixtreme .navbar.navbar-inverse {
+.navbar.navbar-inverse {
     background: #167efb;
     border-color: #167efb;
 }
-.flixtreme .nav-pills > li {
+.nav-pills > li {
     font-size: 1.2em;
 }
-.flixtreme .nav-pills > li > a {
+.nav-pills > li > a {
     background-color: #167efb;
     color: #fff;
 }
-.flixtreme .nav-pills > li > a:hover,
-.flixtreme .nav-pills > li.active > a:hover {
+.nav-pills > li > a:hover,
+.nav-pills > li.active > a:hover {
     background-color: #146ad2;
 }
-.flixtreme .nav-pills > li.active > a {
+.nav-pills > li.active > a {
     background-color: #167efb;
     color: #fff;
 }
-.flixtreme .nav-pills > li.active > a:after {
+.nav-pills > li.active > a:after {
     background-color: #fff;
     border-radius: 5px;
     content: '';
@@ -31,7 +31,7 @@ body {
     top: 16px;
     width: 10px;
 }
-.flixtreme .nav-stacked > li+li {
+.nav-stacked > li+li {
     margin-top: 4px;
 }
 
@@ -164,9 +164,7 @@ body {
     text-decoration: none;
 }
 
-// Social placement.
 @media (min-width: 768px) {
-
     .container {
         width: 900px;
     }
@@ -192,21 +190,22 @@ body {
     .terms p {
         font-size: 1em;
     }
-
-    .flixtreme-intro .nav.nav-pills {
-        font-size: 32px;
-    }
 }
+
 @media (min-width: 900px) {
     .social { margin-top: 13vw; }
     .hashtag { font-size: 3.5vw; }
 }
+
 @media (min-width: 1200px) { .social { margin-top: 14vw; } }
+
 @media (min-width: 1400px) { .hashtag { font-size: 3vw; } }
+
 @media (min-width: 1700px) {
     .social { margin-top: 15vw; }
     .hashtag { font-size: 2.5vw; }
 }
+
 @media (min-width: 1900px) { .social { margin-top: 16vw; } }
 
 @media (max-width: 767px) {
