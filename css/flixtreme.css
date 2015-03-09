@@ -77,7 +77,7 @@ body {
 .jumbo-wrap > .details {
     clear: right;
     float: left;
-    padding: 10% 0 0 20px;
+    padding: 11% 0 0 20px;
     width: 50%;
 }
 .download-app {
@@ -87,7 +87,7 @@ body {
     box-shadow: 1px 1px rgba(0, 0, 0, .25);
     color: #fff;
     font-size: 1.8vw;
-    margin-top: 12%;
+    margin-top: 29%;
     padding: .4em 2em;
     text-shadow: 1px 1px rgba(0, 0, 0, .25);
     max-width: 100%;
@@ -104,7 +104,7 @@ body {
 }
 
 .social {
-    margin-top: 11vw;
+    margin-top: 4vw;
 }
 .social a {
     background-image: url('/images/social.png');
@@ -193,20 +193,20 @@ body {
 }
 
 @media (min-width: 900px) {
-    .social { margin-top: 13vw; }
+    .social { margin-top: 5vw; }
     .hashtag { font-size: 3.5vw; }
 }
 
-@media (min-width: 1200px) { .social { margin-top: 14vw; } }
+@media (min-width: 1200px) { .social { margin-top: 6vw; } }
 
 @media (min-width: 1400px) { .hashtag { font-size: 3vw; } }
 
 @media (min-width: 1700px) {
-    .social { margin-top: 15vw; }
+    .social { margin-top: 7vw; }
     .hashtag { font-size: 2.5vw; }
 }
 
-@media (min-width: 1900px) { .social { margin-top: 16vw; } }
+@media (min-width: 1900px) { .social { margin-top: 8vw; } }
 
 @media (max-width: 767px) {
     .nav-pills {
