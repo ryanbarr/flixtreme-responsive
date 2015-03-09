@@ -3,14 +3,14 @@ body {
     padding-top: 70px; /* Offset for fixed navigation. */
 }
 .navbar.navbar-inverse {
-    background: #167efb;
-    border-color: #167efb;
+    background: #017aff;
+    border-color: #017aff;
 }
 .nav-pills > li {
     font-size: 1.2em;
 }
 .nav-pills > li > a {
-    background-color: #167efb;
+    background-color: #017aff;
     color: #fff;
 }
 .nav-pills > li > a:hover,
@@ -18,7 +18,7 @@ body {
     background-color: #146ad2;
 }
 .nav-pills > li.active > a {
-    background-color: #167efb;
+    background-color: #017aff;
     color: #fff;
 }
 .nav-pills > li.active > a:after {
@@ -209,12 +209,20 @@ body {
 @media (min-width: 1900px) { .social { margin-top: 8vw; } }
 
 @media (max-width: 767px) {
+    .mobile-header img {
+        display: block;
+        margin: 0 auto;
+    }
+    .mobile-header img+img {
+        margin: 25px auto;
+    }
+
     .nav-pills {
         margin: 0 15px;
     }
 
     .jumbo-wrap {
-        background: #167efb;
+        background: #017aff;
         top: 0;
         width: 100%;
     }
@@ -247,10 +255,10 @@ body {
         line-height: 1em;
     }
 
-    .download-app {
+    .jumbo-wrap > .details .download-app {
         border: 3px solid #fff;
-        font-size: 32px;
-        margin: 0;
+        font-size: 8vw;
+        margin: 10px 0 0 0;
     }
 
     .flixtreme-intro .intro-nav {
