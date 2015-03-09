@@ -6,9 +6,21 @@ var Flixtreme = (function(){
 
     // Method which executes upon import of the Flixtreme file.
     this.init = function() {
+        this.setupPopover();
         this.bindFlixtremeEvents();
 
         return this;
+    };
+
+    // Sets up the popover element
+    this.setupPopover = function() {
+        $(document.body)
+            .find('.download-app')
+            .popover({
+                content: 'Test',
+                placement: 'top',
+                trigger: 'manual'
+            });
     };
 
     // Binds global event handlers for the Flixtreme website.
@@ -26,7 +38,11 @@ var Flixtreme = (function(){
 
     // Navigate the user to the iTunes store.
     this.downloadApp = function() {
-        window.location = "https://itunes.apple.com/us/app/flixtreme/id959659626?mt=8";
+        if (document.body.clientWidth >= 768) {
+          $(this).popover('show');
+        } else {
+          window.location = "https://itunes.apple.com/us/app/flixtreme/id959659626?mt=8";
+        }
     };
 
     // Toggles the visible state of the menu for mobile devices.
